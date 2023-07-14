@@ -68,6 +68,15 @@ figure, header, nav, section, article, aside, footer, figcaption {
   float: left;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .mobile-br {
+    display: block; /* Mostrar el <br> en dispositivos móviles */
+    content: "\A"; /* Agregar un salto de línea en el contenido */
+    white-space: pre; /* Mantener el espacio en blanco del salto de línea */
+  }
+}
+
 .grid-item img {
   display: block;
   max-width: 100%;
